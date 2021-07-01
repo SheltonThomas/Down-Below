@@ -1,0 +1,6 @@
+Things that need to be in save files(per level infor stored in level folder):
+-Levels
+	-Task Completion
+-Player
+	-Stats
+	-Inventory

@@ -6,7 +6,10 @@ namespace DownBelow
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Level test = new Level(4);
+            test.Start();
+
+            Console.Write(test.GetMapToDraw());
         }
     }
 }
