@@ -44,7 +44,6 @@ namespace DownBelow
             collidableTiles.Add(TileType.BottomRightCorner);
             collidableTiles.Add(TileType.MiddleMiddlePiece);
 
-
             _mapObjects = new List<GameObject>();
             _mapSize = mapXYSize;
             _mapToDraw = "";
