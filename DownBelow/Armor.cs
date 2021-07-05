@@ -12,15 +12,20 @@ namespace DownBelow
         Boots
     }
 
-    class Armor
+    class Armor : Item
     {
-        private ArmorType _armorType;
-        private float _defense;
+        public ArmorType ArmorType { get; private set; }
+        public float Defense { get; private set; }
         
-        public Armor(ArmorType armorType, float defense)
+        public Armor(ArmorType armorType, float defense, string name) : base(name) 
         {
-            _armorType = armorType;
-            _defense = defense;
+            ArmorType = armorType;
+            Defense = defense;
+        }
+
+        public void IncreaseDefense(float defenseIncrease)
+        {
+            Defense += defenseIncrease;
         }
     }
 }
